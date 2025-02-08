@@ -21,10 +21,10 @@ font-weight: 600;
     margin-left: 34px;
 }
 .parent1 {
-    display: flex
- justify-content: space-between
-    align-items: center;
-    margin-top: 50px;
+display: flex;
+align-items: center;
+margin-top: 50px;
+justify-content: space-between;
 }
 .banner {
     margin-top: 45px;
