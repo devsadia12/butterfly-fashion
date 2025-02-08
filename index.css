@@ -1,0 +1,279 @@
+body {
+    margin: 0px;
+    max-width: 1440px;
+}
+.container {
+    padding: 0 150px;
+}
+#logo-img { 
+    width: 70px;
+    height: auto;
+}
+.rightnav a {
+    text-decoration: none;
+margin-left: 34px;
+color: #3A3A3A;
+font-size: 16px;
+font-family: "Poppins", serif;
+font-weight: 600;
+}
+.icon {
+    margin-left: 34px;
+}
+.parent1 {
+    display: flex
+ justify-content: space-between
+    align-items: center;
+    margin-top: 50px;
+}
+.banner {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 74px;
+}
+.sentence {
+    width: 50%;
+}
+.img {
+    width: 41%;
+}
+#camera-image{
+    width: 400px;
+    height: auto;
+}
+#head {
+    font-family: "Poppins", serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+#para {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-top: -30px;
+}
+.btn {
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    padding: 10px 24px;
+    border: none;
+}
+#mlogo {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#head1 {
+    color: #3A3A3A;
+    font-family: "Poppins", serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 100px;
+    text-align: center;
+}
+.cardparent {
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 30px;
+justify-content: center;
+}
+.card {
+    width: 300px;
+    height: 476px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.258);
+    padding: 17px;
+}
+.cardimg {
+    width: 100%;
+}
+.cardimg img {
+    width: 100%;
+}
+.cardhead {
+    color: #18191F;
+    font-family: "Poppins", serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.carddes {
+    color: #000000;
+    font-family: "Inter", serif;
+    font-size: 24px;
+}
+.iconstyle {
+    color: orange;
+    font-size: 14px;
+}
+.word {
+    width: 65%;
+color: #787885;
+font-family: "Poppins", serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.btn1 {
+    margin-top: 50px;
+    border: none;
+    color: #E02C6D;
+    background-color: white;
+    text-align: end;
+}
+.image {
+    width: 404px;
+    height: 270px;
+    margin-left: 100px;
+}
+.foot1 {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.wordss {
+   margin-left: 150px;
+    width: 35%;
+}
+#last {
+    color: #0A0826;
+font-family: "Poppins", serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+#last2 {
+    font-family: "Poppins", serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #6C6C6C;
+}
+.btn3 {
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    font-weight: 700;
+}
+.seemore{
+    text-align: end;
+    margin-right: 100px;
+}
+#bar {
+    display: none;
+}
+.colour {
+    background-color: #0A0826;
+    width: 100%;
+    height: auto;
+}
+#inf {
+    color: white;
+    font-family: "Poppins", serif;
+        font-size: 24px;
+        font-weight: 700;
+}
+#copy {
+    color: white;
+    font-family: "Poppins", serif;
+        font-size: 14px;
+        margin-top: -10px;
+}
+.lastword {
+    text-align: center;
+    padding: 20px 10px;
+}
+#bar2{
+    display: none;
+}
+
+<!--media query started here-->
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 0 150px;
+    }
+}
+    @media screen and (max-width: 834px) {
+            .rightnav {
+                display: none;
+            }
+            .cardparent {
+                grid-template-columns: auto auto;
+                justify-content: center;
+            }
+            #bar {
+                display: block;
+            }
+    }
+    @media screen and (max-width: 768px) {
+        .banner {
+            flex-direction: column-reverse;
+        }
+        .foot1 {
+            flex-direction: column;
+            margin-left: 120px;
+        }
+        #mlogo {
+            width: 630px;
+        }
+.sentence {
+    margin-left: 130px;
+    text-align: center;
+}
+#head {
+    font-size: 40px;
+}
+#para {
+    font-size: 12px;
+}              
+#camera-image {
+    width: 380px;
+    height: auto;
+    margin-left: 60px;
+}   
+}
+     @media screen and (max-width: 480px) {
+        .cardparent {
+            grid-template-columns: auto;
+            margin-left: 180px;
+        }
+        #logo-img{
+            display: none;
+        }
+        #bar2{
+            display: block;
+            margin-left: 400px;
+        }
+        #head1 {
+         margin-left: 180px;
+        }
+        .prebook {
+            width: 300px;
+        }
+        #camera-image{
+       width: 480%;
+       margin-right: 130px;
+        }
+        #mlogo {
+            width: 500px;
+            margin-right: -30px;
+        }
+        #para {
+            font-size: 13px;
+            margin-top: px;
+        }
+        #head {
+            font-size: 42px;
+            text-align: justify;
+        }
+        .sentence {
+            text-align: left;
+    }
+    .foot1 {
+        margin-left: 100px;
+    }
+   .foot2 {
+    margin-left: 150px;
+   }   
+    }
