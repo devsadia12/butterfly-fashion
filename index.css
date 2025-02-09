@@ -3,7 +3,7 @@ body {
     max-width: 1440px;
 }
 .container {
-    padding: 0 150px;
+    padding: 0 180px;
 }
 #logo-img { 
     width: 70px;
@@ -36,7 +36,7 @@ justify-content: space-between;
     width: 50%;
 }
 .img {
-    width: 41%;
+    width: 40%;
 }
 #camera-image{
     width: 400px;
@@ -62,9 +62,15 @@ justify-content: space-between;
     padding: 10px 24px;
     border: none;
 }
-#mlogo {
-    margin-left: 100px;
-    margin-right: 100px;
+.mlogo{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 5px;
+}
+.midlogo{
+    width: auto;
+    height: 25px;
+    margin-left: 42px;
 }
 #head1 {
     color: #3A3A3A;
@@ -77,12 +83,12 @@ justify-content: space-between;
 .cardparent {
 display: grid;
 grid-template-columns: auto auto auto;
-grid-gap: 30px;
+grid-gap: 20px;
 justify-content: center;
 }
 .card {
-    width: 300px;
-    height: 476px;
+    width: 280px;
+    height: 450px;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.258);
     padding: 17px;
@@ -164,8 +170,9 @@ font-family: "Poppins", serif;
 }
 .colour {
     background-color: #0A0826;
-    width: 100%;
+    width: 145%;
     height: auto;
+
 }
 #inf {
     color: white;
@@ -191,7 +198,7 @@ font-family: "Poppins", serif;
 
 @media screen and (max-width: 1024px) {
     body {
-        margin: 0 150px;
+        margin: 0px ;
     }
 }
     @media screen and (max-width: 834px) {
@@ -201,10 +208,15 @@ font-family: "Poppins", serif;
             .cardparent {
                 grid-template-columns: auto auto;
                 justify-content: center;
+                margin-left: 60px;
+            }
             }
             #bar {
                 display: block;
             }
+.foot2{
+    width: 900px;
+}
     }
     @media screen and (max-width: 768px) {
         .banner {
@@ -214,8 +226,9 @@ font-family: "Poppins", serif;
             flex-direction: column;
             margin-left: 120px;
         }
-        #mlogo {
-            width: 630px;
+        .cardparent {
+            grid-template-columns: auto;
+            justify-content: center;
         }
 .sentence {
     margin-left: 130px;
@@ -227,53 +240,62 @@ font-family: "Poppins", serif;
 #para {
     font-size: 12px;
 }              
-#camera-image {
-    width: 380px;
-    height: auto;
-    margin-left: 60px;
-}   
 }
      @media screen and (max-width: 480px) {
-        .cardparent {
+        .cardparent{
             grid-template-columns: auto;
-            margin-left: 180px;
+            justify-content: center;
+        }
+        .banner{
+            flex-direction: column-reverse;
+            justify-content: center;
         }
         #logo-img{
             display: none;
+        }
+        #bar{
+            margin-left: 100px;
         }
         #bar2{
             display: block;
             margin-left: 400px;
         }
         #head1 {
-         margin-left: 180px;
+         margin-left: 430px;
         }
         .prebook {
             width: 300px;
         }
         #camera-image{
-       width: 480%;
-       margin-right: 130px;
+       width: 300px;
+       margin-left: 180px;
+       margin-top: 20px;
         }
-        #mlogo {
-            width: 500px;
-            margin-right: -30px;
-        }
+.cardparent{
+    margin-left: 450px;
+}
+        .mlogo{
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 5px;
+    margin-left: 120px;
+}
         #para {
             font-size: 13px;
-            margin-top: px;
         }
         #head {
             font-size: 42px;
-            text-align: justify;
         }
         .sentence {
-            text-align: left;
+            margin-left: 250px;
     }
     .foot1 {
-        margin-left: 100px;
+        flex-direction: column;
+        margin-left: 150px;
+    }
+    .wordss{
+        margin-left: 220px;
     }
    .foot2 {
-    margin-left: 150px;
+    margin-left: 0px;
    }   
     }
